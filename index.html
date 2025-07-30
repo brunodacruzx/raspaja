@@ -1,16 +1,14 @@
-```html
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Raspajá</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raspajá - Raspadinhas Online</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #0a0a0a;
+      font-family: Arial, sans-serif;
+      background-color: #0e0e0e;
       color: white;
     }
     header {
@@ -21,71 +19,64 @@
       align-items: center;
     }
     header h1 {
-      color: #00ff88;
-      font-size: 1.8rem;
+      margin: 0;
+      color: #14ff75;
     }
     nav a {
-      margin-left: 1rem;
       color: white;
+      margin-left: 1.5rem;
       text-decoration: none;
-      font-weight: 500;
     }
     .hero {
+      background: linear-gradient(to right, #003d2c, #00261b);
+      padding: 3rem;
       text-align: center;
-      padding: 3rem 1rem;
-      background: linear-gradient(to right, #003322, #000);
     }
     .hero h2 {
-      font-size: 2rem;
       color: #00ff88;
+      font-size: 2rem;
     }
     .hero button {
-      margin-top: 1rem;
-      padding: 0.75rem 1.5rem;
-      background-color: #00ff88;
-      color: #000;
+      background-color: #14ff75;
       border: none;
-      font-weight: bold;
-      border-radius: 8px;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
       cursor: pointer;
+      margin-top: 1rem;
     }
     .cards {
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
       gap: 2rem;
-      padding: 3rem 1rem;
+      padding: 2rem;
+      flex-wrap: wrap;
     }
     .card {
-      background-color: #1a1a1a;
-      border-radius: 12px;
-      padding: 1.5rem;
-      text-align: center;
+      background-color: #1b1b1b;
+      padding: 1rem;
+      border-radius: 10px;
+      border: 2px solid #14ff75;
       width: 250px;
-      border: 2px solid #00ff88;
+      text-align: center;
     }
-    .card h3 {
-      color: #00ff88;
+    .card img {
+      width: 100%;
+      border-radius: 8px;
       margin-bottom: 1rem;
     }
-    .card p {
-      margin: 0.5rem 0;
-    }
     .card button {
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      background-color: #00ff88;
-      color: black;
+      background-color: #14ff75;
       border: none;
-      font-weight: bold;
+      padding: 0.6rem 1.5rem;
+      margin-top: 1rem;
       cursor: pointer;
-      border-radius: 6px;
     }
     footer {
-      background-color: #111;
-      color: gray;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2rem;
+      background-color: #111;
+      font-size: 0.9rem;
+      color: #ccc;
     }
   </style>
 </head>
@@ -109,18 +100,23 @@
 
   <section class="cards">
     <div class="card">
+      <img src="img/relampago.png" alt="Raspa Relâmpago">
       <h3>Raspa Relâmpago</h3>
       <p>💶 10€ por tentativa</p>
       <p>🏆 Até 20.000€</p>
       <button>Jogar</button>
     </div>
+
     <div class="card">
+      <img src="img/suprema.png" alt="Raspadinha Suprema">
       <h3>Raspadinha Suprema</h3>
       <p>💶 5€ por tentativa</p>
       <p>🏆 Até 5.000€</p>
       <button>Jogar</button>
     </div>
+
     <div class="card">
+      <img src="img/centavos.png" alt="Centavos Milionários">
       <h3>Centavos Milionários</h3>
       <p>💶 1€ por tentativa</p>
       <p>🏆 Até 15.000€</p>
@@ -134,4 +130,3 @@
   </footer>
 </body>
 </html>
-```
