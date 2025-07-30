@@ -1,132 +1,64 @@
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raspajá - Raspadinhas Online</title>
+  <title>Raspajá</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0e0e0e;
+      background-color: #0d0d0d;
       color: white;
+      font-family: Arial, sans-serif;
     }
     header {
-      background-color: #111;
-      padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 1rem 2rem;
+      background-color: #0d0d0d;
     }
-    header h1 {
-      margin: 0;
-      color: #14ff75;
-    }
-    nav a {
+    header nav a {
       color: white;
-      margin-left: 1.5rem;
       text-decoration: none;
+      font-weight: 600;
+      margin-right: 2rem;
     }
-    .hero {
-      background: linear-gradient(to right, #003d2c, #00261b);
-      padding: 3rem;
-      text-align: center;
-    }
-    .hero h2 {
-      color: #00ff88;
-      font-size: 2rem;
-    }
-    .hero button {
-      background-color: #14ff75;
+    header button {
       border: none;
-      padding: 0.8rem 2rem;
-      font-size: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-weight: 600;
       cursor: pointer;
-      margin-top: 1rem;
     }
-    .cards {
+    .btn-login {
+      background-color: #1a1a1a;
+      color: white;
+    }
+    .btn-register {
+      background-color: #00e676;
+      color: black;
       display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 2rem;
-      flex-wrap: wrap;
-    }
-    .card {
-      background-color: #1b1b1b;
-      padding: 1rem;
-      border-radius: 10px;
-      border: 2px solid #14ff75;
-      width: 250px;
-      text-align: center;
-    }
-    .card img {
-      width: 100%;
-      border-radius: 8px;
-      margin-bottom: 1rem;
-    }
-    .card button {
-      background-color: #14ff75;
-      border: none;
-      padding: 0.6rem 1.5rem;
-      margin-top: 1rem;
-      cursor: pointer;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: #111;
-      font-size: 0.9rem;
-      color: #ccc;
+      align-items: center;
+      gap: 0.5rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>🎯 Raspajá</h1>
-    <nav>
-      <a href="#">Início</a>
-      <a href="#">Raspadinhas</a>
-      <a href="#">Ganhos</a>
-      <a href="#">Depositar</a>
-      <a href="#">Login</a>
-      <a href="#">Registar</a>
-    </nav>
+    <div style="display: flex; align-items: center;">
+      <img src="img/logo.png" alt="Raspajá Logo" style="height: 40px; margin-right: 1.5rem;">
+      <nav style="display: flex; align-items: center;">
+        <a href="#">Início</a>
+        <a href="#">Raspadinhas</a>
+        <a href="#">Indique e Ganhe</a>
+      </nav>
+    </div>
+    <div style="display: flex; gap: 1rem;">
+      <button class="btn-login">Entrar</button>
+      <button class="btn-register"><span>👤+</span> Registrar</button>
+    </div>
   </header>
-
-  <section class="hero">
-    <h2>🎉 Ache 3 iguais e GANHE até 1.000€ na hora!</h2>
-    <button>🎮 Jogar Agora</button>
-  </section>
-
-  <section class="cards">
-    <div class="card">
-      <img src="img/relampago.png" alt="Raspa Relâmpago">
-      <h3>Raspa Relâmpago</h3>
-      <p>💶 10€ por tentativa</p>
-      <p>🏆 Até 20.000€</p>
-      <button>Jogar</button>
-    </div>
-
-    <div class="card">
-      <img src="img/suprema.png" alt="Raspadinha Suprema">
-      <h3>Raspadinha Suprema</h3>
-      <p>💶 5€ por tentativa</p>
-      <p>🏆 Até 5.000€</p>
-      <button>Jogar</button>
-    </div>
-
-    <div class="card">
-      <img src="img/centavos.png" alt="Centavos Milionários">
-      <h3>Centavos Milionários</h3>
-      <p>💶 1€ por tentativa</p>
-      <p>🏆 Até 15.000€</p>
-      <button>Jogar</button>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 Raspajá - Todos os direitos reservados.</p>
-    <p>Jogue com responsabilidade | Apenas maiores de 18 anos</p>
-  </footer>
 </body>
 </html>
